@@ -1,5 +1,4 @@
 <template>
-  <div class="content-wrapper px-3 py-3">
     <section class="content-header mb-4 d-flex justify-content-between align-items-center">
       <h3><i class="fas fa-address-book"></i> Lead Management</h3>
       <router-link class="btn btn-primary" to="/addlead"> <i class="fas fa-plus-circle"></i> Add Lead
@@ -32,12 +31,12 @@
                     company: lead.company,
                     contact: lead.contact
                   }}"
-                  class="btn btn-sm btn-info me-2"><i class="fas fa-tasks"></i>
+                  class="btn btn-sm btn-light me-2"><i class="fas fa-tasks"></i>
                 </router-link>
-                <router-link :to="`/editlead/${lead.id}`" class="btn btn-sm btn-warning me-2">
+                <router-link :to="`/editlead/${lead.id}`" class="btn btn-sm btn-light me-2">
 <i class="fas fa-edit"></i>
                 </router-link>
-                <button @click="removeLead(lead.id)" class="btn btn-sm btn-danger">
+                <button @click="removeLead(lead.id)" class="btn btn-sm btn-light">
                   <i class="fas fa-trash-alt"></i>
                 </button>
               </td>
@@ -50,7 +49,7 @@
     <div v-else class="alert alert-info mt-4 text-center">
       No leads available.
     </div>
-  </div>
+
 </template>
 
 <script setup>

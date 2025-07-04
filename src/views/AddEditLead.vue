@@ -1,6 +1,6 @@
 <template>
-  <div class="content-wrapper px-3 py-3">
-    <section class="content-header mb-3">
+  <div class="content-wrapper px-5 py-3">
+    <section class="content-header mb-1">
       <h1>
         <i class="fas fa-user-edit"></i> {{ isEditMode ? 'Edit Lead' : 'Add Lead' }}
       </h1>

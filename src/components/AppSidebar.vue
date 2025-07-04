@@ -12,25 +12,25 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column"  data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
-            <router-link to="/dashboard" class="nav-link" :class="{ active: isActive('/dashboard') }" :aria-current="isActive('/dashboard') ? 'page' : null">
+            <router-link to="/dashboard" class="nav-link" active-class="active" exact-active-class="active">
               <i class="nav-icon fas fa-house"></i>
               <p>Dashboard</p>
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/leads" class="nav-link" :class="{ active: isActive('/leads') }" :aria-current="isActive('/leads') ? 'page' : null">
+            <router-link to="/leads" class="nav-link" active-class="active" exact-active-class="active">
               <i class="nav-icon fas fa-users"></i>
               <p>Leads</p>
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/addlead" class="nav-link" :class="{ active: isActive('/addlead') }" :aria-current="isActive('/addlead') ? 'page' : null">
+            <router-link to="/addlead" class="nav-link" active-class="active" exact-active-class="active">
               <i class="nav-icon fas fa-user-plus"></i>
               <p>Add Lead</p>
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/tasks" class="nav-link" :class="{ active: isActive('/tasks') }" :aria-current="isActive('/tasks') ? 'page' : null">
+            <router-link to="/tasks" class="nav-link" active-class="active" exact-active-class="active">
               <i class="nav-icon fas fa-tasks"></i>
               <p>Tasks</p>
             </router-link>
@@ -42,7 +42,7 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router'
+/*import { useRoute } from 'vue-router'
 const route = useRoute()
-const isActive = (path) => route.path.startsWith(path)
+const isActive = (path) => route.path.startsWith(path)*/
 </script>

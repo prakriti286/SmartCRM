@@ -1,15 +1,14 @@
 module.exports = {
   preset: '@vue/cli-plugin-unit-jest',
   testEnvironment: 'jsdom',
-  testEnvironmentOptions: {}, 
 
   transform: {
     '^.+\\.vue$': '@vue/vue3-jest',
-    '^.+\\.js$': 'babel-jest'
+    '^.+\\.m?[jt]s$': 'babel-jest' // handles .js and .mjs both
   },
 
-  transformIgnorePatterns: [
-    '/node_modules/(?!(vue|vuex|vue-router|@vue/test-utils)/)'
+ transformIgnorePatterns: [
+    '/node_modules/(?!(axios|vee-validate|@vee-validate|vue|vuex|vue-router|@vue/test-utils)/)'
   ],
 
   moduleFileExtensions: ['js', 'json', 'vue'],
@@ -23,8 +22,9 @@ module.exports = {
   testMatch: [
     '**/src/tests/**/*.test.js',
     '**/tests/unit/**/*.spec.js',
-    '**/__tests__/**/*.js'
+    '**/__tests__/**/*.js',
+    '**/src/components/**/*.spec.js'
   ],
 
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'] 
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js']
 }

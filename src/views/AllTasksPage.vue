@@ -1,5 +1,5 @@
 <template>
-  <div class="content-wrapper px-3 py-3">
+  
     <section class="content-header mb-4">
       <h3><i class="fas fa-tasks"></i> All Tasks</h3>
     </section>
@@ -35,7 +35,7 @@
 </span>
  </td>
 <td class="text-center">
-<button @click="confirmDelete(task.id)" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</button>
+<button @click="confirmDelete(task.id)" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></button>
                 </td>
               </tr>
             </tbody>
@@ -47,7 +47,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script setup>
